@@ -1,0 +1,5 @@
+1. ${Parent account Lambda function role} - This value represent the lambda function IAM role in parent account.
+    example :  "arn:aws:iam::${accountid}:role/ADcleanuprole"
+
+2. ${Parent account default Event Bus} - This value represent the Event Bus from the Parent account to collect the events.
+example : "arn:aws:events:${region}:${accountid}:event-bus/default"

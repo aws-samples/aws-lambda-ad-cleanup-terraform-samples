@@ -1,0 +1,11 @@
+<powershell>
+# Be sure to set the username and password on these two lines. Of course this is not a good
+# security practice to include a password at command line.
+Install-WindowsFeature -Name "RSAT-AD-PowerShell" -IncludeAllSubFeature
+Get-Module -Name ActiveDirectory -ListAvailable
+Import-Module -Name ActiveDirectory
+$domainJoinUserName = (Get-SSMParameterValue -Name domainJoinUser).Parameters[0].Value
+$domainJoinPassword = (Get-SSMParameterValue -Name domainJoinPassword -WithDecryption $True).Parameters[0].Value | ConvertTo-SecureString -AsPlainText -Force
+set-DnsClientServerAddress -InterfaceIndex 6 -ServerAddresses ("172.31.6.66","172.31.68.202")
+Add-Computer -DomainName corp.example.com -Credential $domainCredential -Restart
+</powershell>
