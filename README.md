@@ -1,4 +1,4 @@
-# AD Cleanup automation using Lambda
+# AD Cleanup Automation using Lambda
 
 [Active Directory ](https://www.n-able.com/blog/difference-between-ldap-ad)is a Microsoft scripting tool that manages domain information and user interactions with network services. It’s widely used among managed services providers (MSPs) to [manage employee credentials and access permissions](https://www.n-able.com/blog/free-permissions-analyzer-tool-active-directory).Since Active directory attackers can use inactive accounts to try and hack into an organization. It is important to find these inactive accounts and disable them on a routine maintenance schedule. This APG can quickly find inactive accounts and remove them. So that it will always keep AD secure and updated.
 
