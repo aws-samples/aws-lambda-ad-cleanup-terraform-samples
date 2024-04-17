@@ -1,6 +1,14 @@
-# AD Cleanup Automation using Lambda
+# Custom AD Cleanup Automation solution
 
-[Active Directory ](https://www.n-able.com/blog/difference-between-ldap-ad)is a Microsoft scripting tool that manages domain information and user interactions with network services. It’s widely used among managed services providers (MSPs) to [manage employee credentials and access permissions](https://www.n-able.com/blog/free-permissions-analyzer-tool-active-directory).Since Active directory attackers can use inactive accounts to try and hack into an organization. It is important to find these inactive accounts and disable them on a routine maintenance schedule. This APG can quickly find inactive accounts and remove them. So that it will always keep AD secure and updated.
+[AWS Managed Microsoft AD](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html) is a Microsoft scripting tool that manages domain information and user interactions with network services. It’s widely used among managed services providers (MSPs) to manage employee credentials and access permissions.Since AD attackers can use inactive accounts to try and hack into an organization. It is important to find these inactive accounts and disable them on a routine maintenance schedule. This APG can quickly find inactive accounts and remove them. So that it will always keep AD secure and updated.
+
+## Benefits of this solution:
+
+ - Cleaning up your AD not only improves database and server performance, but can plug holes in your security left from old accounts.
+
+ - Assuming your AD server is hosted in the cloud, de cluttering can also save you storage costs, while improving performance also lowers your monthly bills as bandwidth charges and compute resources can both drop.
+
+ - A clean AD keeps the attackers at bay.
 
 ## Folder structure
 
